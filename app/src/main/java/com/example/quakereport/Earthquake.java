@@ -1,26 +1,32 @@
 package com.example.quakereport;
 
-public class Earthquake {
+class Earthquake {
 
     private String mMagnitude;
     private String mLocation;
     private long mTimeInMilliseconds;
+    private String mUrl;
 
-    public Earthquake(String magnitude, String location, long timeInMilliseconds) {
+    Earthquake(String magnitude, String location, long timeInMilliseconds, String url) {
         this.mMagnitude = magnitude;
         this.mLocation = location;
         this.mTimeInMilliseconds = timeInMilliseconds;
+        this.mUrl = url;
     }
 
-    public String getMagnitude() {
+    String getMagnitude() {
         return mMagnitude;
     }
 
-    public String getLocation() {
+    String getLocation() {
         return mLocation;
     }
 
-    public long getDate() {
+    long getDate() {
         return mTimeInMilliseconds;
+    }
+
+    String getUrl() {
+        return mUrl;
     }
 }
