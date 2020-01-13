@@ -15,10 +15,10 @@
         android:layout_height="36dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/magnitude_circle"
-        android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
+        tools:fontFamily="sans-serif-medium"
         tools:text="8.9" />
 
     <LinearLayout
@@ -35,11 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:fontFamily="sans-serif-medium"
             android:maxLines="1"
             android:textAllCaps="true"
             android:textColor="@color/textColorEarthquakeDetails"
             android:textSize="12sp"
+            tools:fontFamily="sans-serif-medium"
             tools:text="30km S of" />
 
         <TextView

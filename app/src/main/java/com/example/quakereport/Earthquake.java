@@ -2,19 +2,19 @@ package com.example.quakereport;
 
 class Earthquake {
 
-    private String mMagnitude;
+    private double mMagnitude;
     private String mLocation;
     private long mTimeInMilliseconds;
     private String mUrl;
 
-    Earthquake(String magnitude, String location, long timeInMilliseconds, String url) {
+    Earthquake(double magnitude, String location, long timeInMilliseconds, String url) {
         this.mMagnitude = magnitude;
         this.mLocation = location;
         this.mTimeInMilliseconds = timeInMilliseconds;
         this.mUrl = url;
     }
 
-    String getMagnitude() {
+    double getMagnitude() {
         return mMagnitude;
     }
 

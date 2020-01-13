@@ -37,7 +37,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
         TextView magnitudeView = convertView.findViewById(R.id.view_magnitude);
         assert currentEarthquake != null;
-        magnitudeView.setText(currentEarthquake.getMagnitude());
+        magnitudeView.setText(String.valueOf(currentEarthquake.getMagnitude()));
 
         String originalLocation = currentEarthquake.getLocation();
         String primaryLocation;
@@ -69,7 +69,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         GradientDrawable magnitudeCircle = (GradientDrawable) magnitudeView.getBackground();
 
         // Get the appropriate background color based on the current earthquake magnitude
-        int magnitudeColor = getMagnitudeColor(Double.parseDouble(currentEarthquake.getMagnitude()));
+        int magnitudeColor = getMagnitudeColor(currentEarthquake.getMagnitude());
 
         // Set the color on the magnitude circle
         magnitudeCircle.setColor(magnitudeColor);
