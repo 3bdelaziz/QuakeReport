@@ -14,8 +14,8 @@ public class QueryUtils {
     public QueryUtils() {
     }
 
-
     static ArrayList<Earthquake> extractEarthquakes() {
+
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
 
         try {
