@@ -29,6 +29,7 @@ public class QueryUtils {
      * Query the USGS dataset and return a list of {@link Earthquake} objects.
      */
     static List<Earthquake> fetchEarthquakeData(String requestUrl) {
+
         // Create URL object
         URL url = createUrl(requestUrl);
 
