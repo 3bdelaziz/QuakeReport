@@ -20,7 +20,7 @@ import java.util.List;
 
 public class QueryUtils {
 
-    private static String LOG_TAG = QueryUtils.class.getSimpleName();
+    private static final String LOG_TAG = QueryUtils.class.getSimpleName();
 
     public QueryUtils() {
     }
